@@ -15,7 +15,7 @@ class Game extends StatefulWidget {
 class _GameState extends State<Game> {
   final random = Random();
   String result = '';
-  List<String> options = ['камень', 'ножницы', 'бумага'];
+  List<String> options = ['камень', 'ножницы', 'бумагу'];
   String currentScreen = 'home';
   int wins = 0;
   int loss = 0;
@@ -30,8 +30,8 @@ class _GameState extends State<Game> {
         result =
             'Вы выбрали $userChoice, компьютер выбрал $computerChoice. Ничья!';
       } else if ((userChoice == 'камень' && computerChoice == 'ножницы') ||
-          (userChoice == 'ножницы' && computerChoice == 'бумага') ||
-          (userChoice == 'бумага' && computerChoice == 'камень')) {
+          (userChoice == 'ножницы' && computerChoice == 'бумагу') ||
+          (userChoice == 'бумагу' && computerChoice == 'камень')) {
         wins += 1;
         result =
             'Вы выбрали $userChoice, компьютер выбрал $computerChoice. Вы выиграли!';

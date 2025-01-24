@@ -25,25 +25,34 @@ class StatsScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
             SizedBox(height: 20),
             Text(
-              'Ваши Победы: $wins',
+              'Победы: $wins',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.green,
+              ),
             ),
             SizedBox(height: 40),
             Text(
               'Проиграно: $loss',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.red,
+              ),
             ),
             SizedBox(height: 40),
             Text(
               'Ничья: $draw',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(
+                fontSize: 18,
+              ),
             ),
             SizedBox(height: 40),
             ElevatedButton(
