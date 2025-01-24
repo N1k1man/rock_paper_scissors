@@ -11,20 +11,33 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             HeadingText(text: 'Выбери жест'),
-            SizedBox(height: 200),
-            ElevatedButton(
-              onPressed: () => onTestStarted('ножницы'),
-              child: Text('Ножницы'),
+            const SizedBox(height: 50),
+            SizedBox(
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () => onTestStarted('ножницы'),
+                child: const Text('Ножницы'),
+              ),
             ),
-            ElevatedButton(
-              onPressed: () => onTestStarted('камень'),
-              child: Text('Камень'),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () => onTestStarted('камень'),
+                child: const Text('Камень'),
+              ),
             ),
-            ElevatedButton(
-              onPressed: () => onTestStarted('бумага'),
-              child: Text('Бумага'),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () => onTestStarted('бумага'),
+                child: const Text('Бумага'),
+              ),
             ),
           ],
         ),
